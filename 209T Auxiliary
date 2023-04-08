@@ -1,0 +1,18 @@
+CREATE SCHEMA `new_schema` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+CREATE TABLE `new_schema`.`users` (
+  `id` INT NOT NULL AUTO_INCREMENT COMMENT 'This is the primary index',
+  `name` VARCHAR(45) NOT NULL DEFAULT 'N/A',
+  `age` INT NULL,
+  `height` INT NULL,
+  PRIMARY KEY (`id`)
+);
+
+INSERT INTO `new_schema`.`users` (`id`, `name`, `age`, `height`) VALUES 
+  (1, 'John', 40, 150),
+  (2, 'May', 30, 140),
+  (3, 'Tim', 25, 170),
+  (4, 'Jay', 60, 185),
+  (5, 'Maria', 30, 190),
+  (6, 'Tom', 53, 200),
+  (7, 'Carter', 40, 145);
